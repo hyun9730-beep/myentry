@@ -1,0 +1,355 @@
+body{
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+
+    /* 아래 정렬 */
+    align-items:flex-end;
+
+    overflow:hidden;
+    background:white;
+
+    font-family:"Poor Story", system-ui;
+    word-break:keep-all;
+}
+
+
+h1{
+    font-size: 50px;
+}
+
+p1{
+    font-size:30px;
+
+    margin-top:10px;
+}
+
+.back-text{
+
+    position:fixed;
+
+    top:40px;
+    left:40px;
+
+
+    font-size:28px;
+
+    z-index:100;
+
+}
+
+
+.next-text{
+
+    position:fixed;
+
+    top:40px;
+    right:40px;
+
+}
+
+
+p2{
+    font-size:20px;
+    line-height: 1.5;
+}
+
+
+
+table{
+
+    width:100%;
+    margin-top:20px;
+
+    border-collapse:separate;
+
+}
+
+
+td{
+
+    font-size: 20px;
+    padding:5px 20px;
+
+}
+
+
+
+.back-text:hover{
+
+    text-decoration:underline;
+    text-underline-offset:5px;
+
+}
+
+
+
+a,button,
+.clickable{
+
+    color:orangered;
+    cursor:pointer;
+    text-decoration: none;
+
+}
+
+
+a:hover,button:hover,
+.clickable:hover{
+
+   text-decoration: underline;
+
+}
+
+
+
+.pokemon{
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+.ball-container{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:80px;
+
+    /* 바닥과 거리 */
+    margin-bottom:120px;
+
+}
+
+
+.ball{
+
+    width:130px;
+
+    image-rendering:pixelated;
+    cursor:pointer;
+
+    transition:0.2s;
+
+}
+
+.pokemon:hover .ball{
+
+    scale:1.15;
+
+}
+
+
+
+/* 포켓몬 */
+
+.pokemon-img{
+
+    position:absolute;
+
+    bottom:150px;
+
+    width:200px;
+
+
+    opacity:0;
+
+    transform:
+    translateY(20px)
+    scale(0.8);
+
+
+    transition:0.3s;
+
+    pointer-events:none;
+
+}
+
+
+/* hover 등장 */
+
+.pokemon:hover .pokemon-img{
+
+    opacity:1;
+
+    transform:
+    translateY(0)
+    scale(1);
+
+}
+
+
+.info-container{
+
+    position:fixed;
+
+    top:40px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:80%;
+    z-index:10;
+
+}
+
+
+.pokemon-info{
+
+    display:none;
+
+    width:100%;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:60px;
+
+}
+
+
+.pokemon-info.active{
+
+    display:flex;
+
+}
+
+
+.info-img{
+
+    width:20vw;
+
+}
+
+
+.description-box{
+
+     width:40vw;
+
+    padding:20px;
+
+    border:1.5px solid black;
+    background: black;
+    color: white;
+
+    box-sizing:border-box;
+
+}
+
+
+.pop-btn{
+    color:orangered;
+    curosr:pointer;
+}
+
+.pop-btn:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+
+.pop-box{
+
+    position:absolute;
+    width:max-content;
+    max-width:30vw;
+
+    padding:25px;
+
+    background:yellow;
+
+    display:none;
+
+    z-index:9999;
+
+}
+
+.pop-img{
+
+    width:100%;
+
+    display:block;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.pop-close{
+
+    color:orangered;
+    cursor:pointer;
+
+}
+
+.pop-close:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+
+
+
+/* 아치 */
+
+.ball-1{
+
+    transform:
+    translateY(80px)
+    rotate(-25deg);
+
+}
+
+
+.ball-2{
+
+    transform:
+    translateY(10px)
+    rotate(-15deg);
+
+}
+
+
+.ball-3{
+
+    transform:
+    translateY(-50px)
+    rotate(-5deg);
+
+}
+
+
+.ball-4{
+
+    transform:
+    translateY(-50px)
+    rotate(5deg);
+
+}
+
+
+.ball-5{
+
+    transform:
+    translateY(10px)
+    rotate(15deg);
+
+}
+
+
+.ball-6{
+
+    transform:
+    translateY(80px)
+    rotate(25deg);
+
+}

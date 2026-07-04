@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center; /* 세로 중앙 */
+    align-items:center;     /* 가로 중앙 */
+
+    font-family:"Poor Story", system-ui;
+    word-break:keep-all;
+
+    background:white;
+}
+
+
+h1{
+    font-size:55px;
+
+    margin-top:40px;
+}
+
+
+p1{
+    font-size:30px;
+
+    margin-top:10px;
+}
+
+
+p2{
+    font-size:18px;
+    line-height: 1.5;
+
+}
+
+
+img{
+    cursor:pointer;
+}
+
+
+.intro-text{
+
+    opacity:0;
+    transition:0.5s;
+
+}
+
+
+.show{
+    opacity:1;
+}
+
+
+
+#popup{
+
+    position:absolute;
+
+    display:none;
+
+
+    width:300px;
+
+    padding:25px;
+
+    background:yellow;
+
+    border:0px solid black;
+    border-radius:0px;
+
+
+    font-family:"Poor Story", system-ui;
+
+    text-align:left;
+
+
+}
+
+
+a,button,
+.clickable{
+
+    color:orangered;
+    cursor:pointer;
+    text-decoration: none;
+
+}
+
+
+a:hover,button:hover,
+.clickable:hover{
+
+   text-decoration: underline;
+   text-underline-offset:7px;
+
+}
+
+
+
+button{
+
+    border:none;
+    border-radius:0px;
+
+}
+
+#close{
+
+
+    border:none;
+    background:none;
+
+
+    font-size:13px;
+    font-family:"Poor Story", system-ui;
+
+}
